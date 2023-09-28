@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Task</title>
+</head>
+
+<body>
+	<form method="post" action="<?php echo base_url('user/save'); ?>">
+		<table width="600" border="1" cellspacing="5" cellpadding="5">
+			<tr>
+				<td width="230">Title</td>
+				<td width="329">
+					<input type="text" name="titileName" />
+				</td>
+			</tr>
+			<tr>
+				<td>Mission</td>
+				<td>
+					<input type="text" name="missionName" />
+				</td>
+			</tr>
+			<tr>
+				<td>Check</td>
+				<td>
+					<input type="checkbox" name="kontrol"> checked <br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="btnAddUser" value="Add Task" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>wretrterter
