@@ -12,7 +12,7 @@ protected $primarykey ="task_id";
 
 protected $allowedFields=[ "task_title", "task_mission","task_check[]"];
 
-protected $primaryKey           = 'task_id';
+//protected $primaryKey           = 'task_id';
 protected $useAutoIncrement     = true;
 
 protected $validationRules      = [];

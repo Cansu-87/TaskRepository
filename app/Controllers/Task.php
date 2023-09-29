@@ -44,7 +44,7 @@ class Task extends BaseController
         'task_mission' => $this->request->getPost('task_mission'),
         'task_check' => $this->request->getPost('task_check')
          ];
-
+         
          if($model->insert($data)){
             $response = [
                 'success' => true,
