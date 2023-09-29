@@ -5,25 +5,30 @@
 	<title>Task</title>
 </head>
 
+
+
 <body>
-	<form method="post" action="<?php echo base_url('user/save'); ?>">
+
+  
+	<form id="add_task" >
 		<table width="600" border="1" cellspacing="5" cellpadding="5">
 			<tr>
 				<td width="230">Title</td>
 				<td width="329">
-					<input type="text" name="titileName" />
+					<input type="text" name="task_title" />
 				</td>
 			</tr>
 			<tr>
 				<td>Mission</td>
 				<td>
-					<input type="text" name="missionName" />
+					<input type="text" name="task_mission" />
 				</td>
 			</tr>
 			<tr>
 				<td>Check</td>
 				<td>
-					<input type="checkbox" name="kontrol"> checked <br>
+					<input type="radio" value="mytaskcheck" name="task_check[]"> checked <br>
+					
 				</td>
 			</tr>
 			<tr>
@@ -34,5 +39,56 @@
 		</table>
 	</form>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Validation library file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<!-- Sweetalert library file -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
 
-</html>wretrterter
+<script>
+
+$(function() {
+
+// Adding form validation
+$('#add_task').validate();
+
+// Ajax form submission with image
+$('#add_task').on('submit', function(e) {
+
+    e.preventDefault();
+
+    var formData = new FormData(this);
+    // OR var formData = $(this).serialize();
+
+    //We can add more values to form data
+    //formData.append("key", "value");
+
+    $.ajax({
+        url: "<?= site_url('Task/addTask') ?>",
+        type: "POST",
+        cache: false,
+        data: formData,
+        processData: false,
+        contentType: false,
+        dataType: "JSON",
+        success: function(data) {
+            if (data.success == true) {
+                Swal.fire('Kaydedildi!', '', 'success')
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('Hata Var');
+        }
+    });
+});
+});
+
+
+</script>
+
+
+
+
+
+
+</html>
