@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <form id="showTask">
+    
 	<title>Task</title>
 </head>
 <input type="button" value="Add Task" onclick="Redirect();" />
@@ -30,6 +32,7 @@
       
     </tbody>
   </table>
+          </form>
   <script>
          function Redirect() {
             location.href="http://localhost:8080/";
