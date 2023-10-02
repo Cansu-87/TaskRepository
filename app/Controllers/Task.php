@@ -9,6 +9,11 @@ class Task extends BaseController
         $this->model=new TaskModel;
     }*/
 
+    private TaskModel $model;
+    public function __construct(){
+        $this->model=new TaskModel;
+    }
+
 
     public function index()
     {
@@ -51,41 +56,29 @@ class Task extends BaseController
          if($model->insert($data)){
             $response = [
                 'success' => true,
-                'msg' => "User created",
+                'msg' => "Task created",
             ];
         } else {
             $response = [
                 'success' => true,
-                'msg' => "Failed to create user",
+                'msg' => "Failed to create Task",
             ];
         }
         return $this->response->setJSON($response);
          }
-      
-      
-     
-     
-     
-
-
-
-       /* $task = new TaskModel;
-       $id= $this->model->insert($task);
-     
-        return redirect() ->to("Task/$id")
-                          ->with("message","Task saved");*/
         
-        
-       
-        
+     }
 
-    }
+    public function show(){
+        
+     
+     $data =$this->model->findAll();
+     
+     
+     
 
-    public function new(){
-        return view("Task/new",[
-            "task" =>new TaskModel
-            ]
-        );
+
+        return view("Home/show.php",["task" => $data]);
     }
 
 

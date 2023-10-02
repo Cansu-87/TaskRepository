@@ -8,5 +8,5 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get("/Task","Task::index");
 $routes->post("/Task/addTask","Task::addTask");
-$routes->get("/Task/new","Task::new");
+$routes->get("/show","Task::show");
 
