@@ -25,13 +25,25 @@
 					<input type="text" name="task_mission" />
 				</td>
 			</tr>
-			<tr>
+
+            <tr>
 				<td>Check</td>
-				<td>
-					<input type="radio" value="mytaskcheck" name="task_check[]"> checked <br>
-					
-				</td>
-			</tr>
+                <td>
+                    
+                    <select name="task_check" id="task_check">
+                      <option value="Kabul">Kabul</option>
+                      <option value="Red">Red</option>
+                     
+                    </select>
+
+
+
+               
+
+            </td>
+        </tr>
+
+
 			<tr>
                 
 				<td colspan="2" align="center">
@@ -76,7 +88,7 @@ $('#add_task').on('submit', function(e) {
         dataType: "JSON",
         success: function(data) {
             if (data.success == true) {
-                Swal.fire('Kaydedildi!', '', 'success')
+                Swal.fire('Saved!', '', 'success')
             }
         },
         error: function(jqXHR, textStatus, errorThrown) {

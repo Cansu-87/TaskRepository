@@ -25,6 +25,8 @@ class Task extends BaseController
                 "task_title" => "required",
 				"task_mission" => "required",
 				"task_check" => "required"
+               
+
         ];
         if(!$this->validate($rules)){
             $response = [
@@ -42,7 +44,8 @@ class Task extends BaseController
         $data=[
         'task_title' => $this->request->getPost('task_title'),
         'task_mission' => $this->request->getPost('task_mission'),
-        'task_check' => $this->request->getPost('task_check')
+        'task_check' => $this->request->getPost('task_check'),
+        'task_notchecked' => $this->request->getPost('task_notchecked')
          ];
          
          if($model->insert($data)){
