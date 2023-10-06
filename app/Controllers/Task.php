@@ -4,11 +4,7 @@ namespace App\Controllers;
 use App\Models\TaskModel;
 class Task extends BaseController
 {
-    //private TaskModel $model;
-   /* public function __construct(){
-        $this->model=new TaskModel;
-    }*/
-
+    
     private TaskModel $model;
     public function __construct(){
         $this->model=new TaskModel;
@@ -20,7 +16,7 @@ class Task extends BaseController
 
 
 
-        return view('Home/index.html');
+        return view('Home/show.php');
         
     }
 
@@ -28,8 +24,8 @@ class Task extends BaseController
 
         $rules=[
                 "task_title" => "required",
-				"task_mission" => "required",
-				"task_check" => "required"
+				"task_mission" => "required"
+	
                
 
         ];
@@ -49,8 +45,7 @@ class Task extends BaseController
         $data=[
         'task_title' => $this->request->getPost('task_title'),
         'task_mission' => $this->request->getPost('task_mission'),
-        'task_check' => $this->request->getPost('task_check'),
-        'task_notchecked' => $this->request->getPost('task_notchecked')
+        'task_check' => $this->request->getPost('task_check')
          ];
          
          if($model->insert($data)){
@@ -70,24 +65,36 @@ class Task extends BaseController
      }
 
     public function show(){
-        
-     
-     $data =$this->model->findAll();
-     
-     
-     
-
-
+        $data =$this->model->findAll();
         return view("Home/show.php",["task" => $data]);
+    }
+
+    public function update(){
+        $id		         = $this->request->getPost('task_id');
+        $task_title		= $this->request->getPost('task_title');
+		$task_mission	= $this->request->getPost('task_mission');
+		$task_check	= $this->request->getPost('task_check');
+       
+
+        $data = [
+			'task_title'		=> $task_title,
+			'task_mission'		=> $task_mission,
+			'task_check'	    => $task_check,
+		];
+
+        $result = $this->model->update($id, $data);
+        
+        if($result) {
+			echo "User details are updated successfully.";
+		} else {
+			echo "Something went wrong";
+		}
+        return redirect()->to( base_url('Task') );
     }
 
 
 
 }
-
-
-
-
 
 
 

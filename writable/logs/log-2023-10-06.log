@@ -1,0 +1,155 @@
+CRITICAL - 2023-10-06 06:04:54 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 06:05:51 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 06:06:08 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 06:08:17 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 08:16:12 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 09:52:03 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 09:54:22 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 09:54:35 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 09:55:33 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 09:55:53 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 09:58:33 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 09:59:25 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 10:00:50 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 10:00:57 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 11:45:07 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 11:45:57 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Task.php(85): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 11:46:05 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Task.php(85): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 11:54:22 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Task.php(85): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 12:01:57 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Task.php(85): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-06 12:04:58 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update()
+ 3 APPPATH\Controllers\Task.php(85): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
