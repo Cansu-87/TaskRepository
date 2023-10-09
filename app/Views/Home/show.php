@@ -24,7 +24,7 @@
 <form id="showTask">
 
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Task</button>
+<button type="button" class="openModal" data-toggle="modal" data-target="#myModal">Add Task</button>
 <div class="mx-auto" style="width=800px;">
 <table id="dtBasicExample" class="table table-striped table-bordered table-sm" width="600" border="4" cellspacing="5" cellpadding="5" >
     <thead class="thead-dark">
@@ -108,7 +108,7 @@
 </div>
 <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" id="button" class="btn btn-primary">Add Task</button>
+        <button type="button" id="button" class="butonAdd">Add Task</button>
         
       </div>
     </div>
@@ -216,7 +216,7 @@ $(function() {
 $('#add_task').validate();
 
 
-$('#button').click(function() {
+$('.butonAdd').click(function() {
 
     
 

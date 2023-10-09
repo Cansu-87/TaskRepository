@@ -82,14 +82,14 @@ class Task extends BaseController
 			'task_check'	    => $task_check,
 		];
 
-        $result = $this->model->update($id, $data);
-        
+        $result = $this->model->updateBymodel($id, $data);
+        print_r($result);
         if($result) {
-			echo "User details are updated successfully.";
+			echo "Task details are updated successfully.";
 		} else {
 			echo "Something went wrong";
 		}
-        return redirect()->to( base_url('Task') );
+        return $result;
     }
 
 
