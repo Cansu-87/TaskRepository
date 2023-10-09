@@ -70,26 +70,27 @@ class Task extends BaseController
     }
 
     public function update(){
-        $id		         = $this->request->getPost('task_id');
+        $taskid		         = $this->request->getPost('task_id');
         $task_title		= $this->request->getPost('task_title');
 		$task_mission	= $this->request->getPost('task_mission');
 		$task_check	= $this->request->getPost('task_check');
-       
+        
 
         $data = [
-			'task_title'		=> $task_title,
+            'task_id'           =>$taskid,
+ 			'task_title'		=> $task_title,
 			'task_mission'		=> $task_mission,
 			'task_check'	    => $task_check,
 		];
-
-        $result = $this->model->updateBymodel($id, $data);
-        print_r($result);
+        print_r($data);
+        $result = $this->model->updateBymodel($taskid, $data);
+        
         if($result) {
 			echo "Task details are updated successfully.";
 		} else {
 			echo "Something went wrong";
 		}
-        return $result;
+        //return $result;
     }
 
 

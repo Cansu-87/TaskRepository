@@ -225,3 +225,103 @@ in APPPATH\Models\TaskModel.php on line 49.
  4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+ERROR - 2023-10-09 10:14:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':task_title:, `task_mission` = :task_mission:, `task_check` = :task_check:
+WH...' at line 1 in C:\Users\INFODIF\Desktop\GİT\Task\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\INFODIF\Desktop\GİT\Task\app\Models\TaskModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\INFODIF\Desktop\GİT\Task\app\Controllers\Task.php(85): App\Models\TaskModel->updateBymodel()
+#6 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(919): App\Controllers\Task->update()
+#7 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\INFODIF\Desktop\GİT\Task\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\INFODIF\Desktop\GİT\Task\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-10-09 10:14:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':task_title:, `task_mission` = :task_mission:, `task_check` = :task_check:
+WH...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Models\TaskModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\Task.php(85): App\Models\TaskModel->updateBymodel()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-09 10:16:50 --> Array to string conversion
+in SYSTEMPATH\Database\Query.php on line 327.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\Database\Query.php(327): implode()
+ 3 SYSTEMPATH\Database\Query.php(308): CodeIgniter\Database\Query->matchNamedBinds()
+ 4 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 5 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 6 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 7 APPPATH\Models\TaskModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 8 APPPATH\Controllers\Task.php(85): App\Models\TaskModel->updateBymodel()
+ 9 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+ERROR - 2023-10-09 10:30:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':task_title:, `task_mission` = :task_mission:, `task_check` = :task_check:
+WH...' at line 1 in C:\Users\INFODIF\Desktop\GİT\Task\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\MySQLi\Connection.php(306): mysqli->query()
+#1 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\INFODIF\Desktop\GİT\Task\app\Models\TaskModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\INFODIF\Desktop\GİT\Task\app\Controllers\Task.php(86): App\Models\TaskModel->updateBymodel()
+#6 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(919): App\Controllers\Task->update()
+#7 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\INFODIF\Desktop\GİT\Task\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\INFODIF\Desktop\GİT\Task\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-10-09 10:30:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':task_title:, `task_mission` = :task_mission:, `task_check` = :task_check:
+WH...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH\Models\TaskModel.php(49): CodeIgniter\Database\BaseBuilder->update()
+ 3 APPPATH\Controllers\Task.php(86): App\Models\TaskModel->updateBymodel()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-09 10:32:27 --> Call to a member function set() on null
+in APPPATH\Models\TaskModel.php on line 46.
+ 1 APPPATH\Controllers\Task.php(86): App\Models\TaskModel->updateBymodel()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-09 10:38:32 --> Call to a member function set() on null
+in APPPATH\Models\TaskModel.php on line 46.
+ 1 APPPATH\Controllers\Task.php(86): App\Models\TaskModel->updateBymodel()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-09 10:46:54 --> Too few arguments to function App\Controllers\Task::update(), 0 passed in C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->update()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')
+CRITICAL - 2023-10-09 10:47:39 --> syntax error, unexpected token "$", expecting variable
+in APPPATH\Controllers\Task.php on line 72.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')

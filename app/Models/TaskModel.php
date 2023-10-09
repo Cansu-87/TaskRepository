@@ -42,12 +42,12 @@ protected $validationMessages = [
 
 
 public function updateBymodel($id,$data){ 
-		/*
-  return  $this->db->where('task_id', [$id])
-    ->set($data)
-    ->update();	*/
+
     return $this->db->table('task')
-    ->where('task_id', $id)
+    
+    ->where('task_id', [$id])
     ->update($data);
+
+
 }	
 }

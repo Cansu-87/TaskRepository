@@ -29,7 +29,7 @@
 <table id="dtBasicExample" class="table table-striped table-bordered table-sm" width="600" border="4" cellspacing="5" cellpadding="5" >
     <thead class="thead-dark">
       <tr>
-        <th scope="col">Task Id</th>
+        
         <th scope="col">Task Title</th>
         <th scope="col">Mission</th>
         <th scope="col">Approval Status</th>
@@ -39,7 +39,7 @@
     <tbody>
           <?php foreach($task as $row) : ?>
           <tr>
-                <td><?= $row['task_id'] ?></td>
+                <td style="display:none;"><?= $row['task_id'] ?></td>
                 <td><?= $row['task_title'] ?></td>
                 <td><?= $row['task_mission'] ?></td>
                 <td><?= $row['task_check'] ?></td>
@@ -136,7 +136,7 @@
 
       
   <table width="450" border="1" cellspacing="5" cellpadding="5">
-   
+  <input type="hidden" class ="inpt" name="task_id"  />
     <tr>
       <td >Title</td>
       <td>
@@ -275,12 +275,15 @@ $('.btn.btn-primary').click(function() {
                 //Swal.fire('Saved!', '', 'success')
                 location.reload();
             }
+            //location.reload();
         },
         error: function(jqXHR, textStatus, errorThrown) {
-            alert('Error');
+            location.reload();
         }
     });
+    
 });
+
 });
 
 
@@ -304,9 +307,10 @@ $('.btncls').click(function()
   console.log(taskcheck);
   */
  // document.getElementsByClassName("inpt")[1].value=taskid;
-  $(".inpt")[0].value=taskname;
-  $(".inpt")[1].value=taskmission;
-  $(".inpt")[2].value=taskcheck;
+ $(".inpt")[0].value=taskid;
+ $(".inpt")[1].value=taskname;
+  $(".inpt")[2].value=taskmission;
+  $(".inpt")[3].value=taskcheck;
 
 
 });
