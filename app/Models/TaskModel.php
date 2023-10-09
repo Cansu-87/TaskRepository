@@ -49,5 +49,12 @@ public function updateBymodel($id,$data){
     ->update($data);
 
 
-}	
+}
+public function deletebyid($id){
+    return $this->db->table('task')
+    
+    ->where("task_id", [$id])
+    ->delete();
+}
+
 }

@@ -4,7 +4,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <head>
   
 <link rel="stylesheet" href="styles.css">
@@ -34,17 +34,19 @@
         <th scope="col">Mission</th>
         <th scope="col">Approval Status</th>
         <th scope="col">Edit Status</th>
+        <th scope="col">Delete Status</th>
+
       </tr>
     </thead>
     <tbody>
           <?php foreach($task as $row) : ?>
           <tr>
-                <td style="display:none;"><?= $row['task_id'] ?></td>
+                <td class="idcls" style="display:none;"><?= $row['task_id'] ?></td>
                 <td><?= $row['task_title'] ?></td>
                 <td><?= $row['task_mission'] ?></td>
                 <td><?= $row['task_check'] ?></td>
                <td> <button type="button"  class="btncls" data-toggle="modal" data-target="#myModalUpdate" >Edit</button></td>
-                
+               <td> <button type="button" value="<?=$row['task_id']; ?>"  class="btnclsdlt">Delete</button></td>
           </tr>
           
           <?php endforeach; ?>
@@ -315,6 +317,60 @@ $('.btncls').click(function()
 
 });
 
+// delete 
+$(function () {
+  
+
+$('.btnclsdlt').click(function(){
+  //var taskid=$(this).parents("tr")[0].children[0].innerText;
+ 
+ // alert(id);
+    let parentsElement=$(this).parents("tr");
+    //console.log(parentsElement);
+    let id=$(parentsElement).find(".idcls").text();
+    console.log(id);
+
+  swal.fire({
+  title: "Are you sure?",
+  text: "Once deleted, you will not be able to recover this imaginary file!",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    //var id=$(this).val();
+    
+   
+    $.ajax({
+        url: "<?= site_url('Task/delete') ?>",
+        type: "POST",
+        cache: false, 
+        data: {'id':id},
+        processData: true,
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        dataType: "JSON"
+        
+    });
+  } else {
+    swal("Your imaginary file is safe!");
+  }
+  location.reload();
+});
+  
+      });
+    });
+   
+// sweat alert func
+
+//sweat alert doğrulanırsa 
+
+//ajax
+
+//doğrulanmazsa 
+
+//silme
+  
 
 
 /*

@@ -74,7 +74,7 @@ class Task extends BaseController
         $task_title		= $this->request->getPost('task_title');
 		$task_mission	= $this->request->getPost('task_mission');
 		$task_check	= $this->request->getPost('task_check');
-        
+       
 
         $data = [
             'task_id'           =>$taskid,
@@ -82,7 +82,7 @@ class Task extends BaseController
 			'task_mission'		=> $task_mission,
 			'task_check'	    => $task_check,
 		];
-        print_r($data);
+        
         $result = $this->model->updateBymodel($taskid, $data);
         
         if($result) {
@@ -91,6 +91,30 @@ class Task extends BaseController
 			echo "Something went wrong";
 		}
         //return $result;
+    }
+
+    public function delete(){
+        /*
+        $id= $this->request->getPost('task_id');
+        print_r($id);
+        $model=new TaskModel;
+        $model->deletebyid($id);
+        print_r($id);
+        return redirect()->with('status','Deleted successfully!!');*/
+        $model=new TaskModel;
+        $taskid= $this->request->getPost('id');
+       
+        
+
+        $result = $this->model->deletebyid($taskid);
+
+
+        
+		if($result) {
+			echo "task is deleted successfully.";
+		} else {
+			echo "Something went wrong";
+		}
     }
 
 
