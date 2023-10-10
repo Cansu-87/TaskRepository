@@ -1,0 +1,43 @@
+ERROR - 2023-10-10 05:20:04 --> Error connecting to the database: mysqli_sql_exception: Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı in C:\Users\INFODIF\Desktop\GİT\Task\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\MySQLi\Connection.php(184): mysqli->real_connect()
+#1 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\INFODIF\Desktop\GİT\Task\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\INFODIF\Desktop\GİT\Task\system\BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#6 C:\Users\INFODIF\Desktop\GİT\Task\app\Controllers\Task.php(68): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(919): App\Controllers\Task->show()
+#8 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\INFODIF\Desktop\GİT\Task\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\INFODIF\Desktop\GİT\Task\system\Commands\Server\rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı in C:\Users\INFODIF\Desktop\GİT\Task\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\INFODIF\Desktop\GİT\Task\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\INFODIF\Desktop\GİT\Task\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\INFODIF\Desktop\GİT\Task\system\BaseModel.php(624): CodeIgniter\Model->doFindAll()
+#5 C:\Users\INFODIF\Desktop\GİT\Task\app\Controllers\Task.php(68): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(919): App\Controllers\Task->show()
+#7 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\INFODIF\Desktop\GİT\Task\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\INFODIF\Desktop\GİT\Task\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\INFODIF\Desktop\GİT\Task\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-10-10 05:20:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\Task.php(68): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Task->show()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\INFODIF\\Desktop\\GİT\\Task\\public\\index.php')

@@ -4,11 +4,18 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
 <head>
   
 <link rel="stylesheet" href="styles.css">
-	<title>Task</title>
+
+  <title>Task</title>
   
 </head>
 <body>
@@ -39,15 +46,15 @@
       </tr>
     </thead>
     <tbody>
-          <?php foreach($task as $row) : ?>
-          <tr>
-                <td class="idcls" style="display:none;"><?= $row['task_id'] ?></td>
-                <td><?= $row['task_title'] ?></td>
-                <td><?= $row['task_mission'] ?></td>
-                <td><?= $row['task_check'] ?></td>
-               <td> <button type="button"  class="btncls" data-toggle="modal" data-target="#myModalUpdate" >Edit</button></td>
-               <td> <button type="button" value="<?=$row['task_id']; ?>"  class="btnclsdlt">Delete</button></td>
-          </tr>
+          <?php foreach ($task as $row): ?>
+              <tr>
+                  <td class="idcls" style="display:none;"><?= $row['task_id'] ?></td>
+                     <td><?= $row['task_title'] ?></td>
+                      <td><?= $row['task_mission'] ?></td>
+                      <td><?= $row['task_check'] ?></td>
+                      <td> <button type="button"  class="btncls" data-toggle="modal" data-target="#myModalUpdate" >Edit</button></td>
+                      <td> <button type="button" value="<?= $row['task_id']; ?>"  class="btnclsdlt">Delete</button></td>
+                </tr>
           
           <?php endforeach; ?>
 
@@ -141,6 +148,7 @@
   <input type="hidden" class ="inpt" name="task_id"  />
     <tr>
       <td >Title</td>
+      
       <td>
         <input type="text" class ="inpt" name="task_title"  />
       </td>
@@ -199,8 +207,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Validation library file -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
-<!-- Sweetalert library file -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.min.js"></script>
+
 
 
 
@@ -236,7 +243,8 @@ $('.butonAdd').click(function() {
         dataType: "JSON",
         success: function(data) {
             if (data.success == true) {
-                //Swal.fire('Saved!', '', 'success')
+                
+                
                 location.reload();
             }
         },
@@ -245,8 +253,8 @@ $('.butonAdd').click(function() {
         }
     });
 });
-});
 
+});
 
 </script>
 
@@ -269,15 +277,16 @@ $('.btn.btn-primary').click(function() {
         type: "POST",
         cache: false,
         data: formData,
-        processData: false,
+        processData: true,
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         dataType: "JSON",
+        
         success: function(data) {
             if (data.success == true) {
-                //Swal.fire('Saved!', '', 'success')
+                
                 location.reload();
             }
-            //location.reload();
+            
         },
         error: function(jqXHR, textStatus, errorThrown) {
             location.reload();
@@ -288,27 +297,20 @@ $('.btn.btn-primary').click(function() {
 
 });
 
-
+</script>
+<script>
 
 
 $('.btncls').click(function()
 
-{
-  //var x=document.firstElementChild.lastElementChild.firstElementChild.lastElementChild.firstElementChild.lastElementChild;
-  //console.log(x);
+{  
   
   var taskid=$(this).parents("tr")[0].children[0].innerText;
   var taskname=$(this).parents("tr")[0].children[1].innerText;
   var taskmission=$(this).parents("tr")[0].children[2].innerText;
   var taskcheck=$(this).parents("tr")[0].children[3].innerText;
   
-  /*
-  console.log(taskid);
-  console.log(taskname);
-  console.log(taskmission);
-  console.log(taskcheck);
-  */
- // document.getElementsByClassName("inpt")[1].value=taskid;
+
  $(".inpt")[0].value=taskid;
  $(".inpt")[1].value=taskname;
   $(".inpt")[2].value=taskmission;
@@ -322,26 +324,26 @@ $(function () {
   
 
 $('.btnclsdlt').click(function(){
-  //var taskid=$(this).parents("tr")[0].children[0].innerText;
+  
  
- // alert(id);
+ 
     let parentsElement=$(this).parents("tr");
-    //console.log(parentsElement);
     let id=$(parentsElement).find(".idcls").text();
-    console.log(id);
+   
 
   swal.fire({
-  title: "Are you sure?",
-  text: "Once deleted, you will not be able to recover this imaginary file!",
+  type:"success",
   icon: "warning",
   buttons: true,
-  dangerMode: true,
+  showConfirmButton:true,
+  showCancelButton:true,
+  confirmButtonText:"Confirm",
+  html:"Are you sure to delete this task?",
+  title:"warning"
 })
 .then((willDelete) => {
-  if (willDelete) {
-    //var id=$(this).val();
-    
-   
+  if (willDelete.value) {
+       
     $.ajax({
         url: "<?= site_url('Task/delete') ?>",
         type: "POST",
@@ -352,40 +354,21 @@ $('.btnclsdlt').click(function(){
         dataType: "JSON"
         
     });
+    location.reload();
   } else {
-    swal("Your imaginary file is safe!");
+    
+    swal.fire("Your task is safe!");
+    
   }
-  location.reload();
+  //
 });
   
       });
     });
    
-// sweat alert func
-
-//sweat alert doğrulanırsa 
-
-//ajax
-
-//doğrulanmazsa 
-
-//silme
-  
+    
 
 
-/*
-
-const classNameButton=document.getElementsByClassName("btn btn-primary1");
-console.log("classNameButton");
-var numberOfclassButtons=document.querySelectorAll(".primary1").length;
-for (var index = 0; index < numberOfclassButtons; index++) {
- document.querySelectorAll("#primary1")[index].addEventListener("click",function(){
-  console.log("clicked");
-
- });
-
-}
-*/
 
 </script>
 
