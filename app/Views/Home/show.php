@@ -230,7 +230,7 @@ $('.butonAdd').click(function() {
     
 
   var formData = $("#add_task").serialize();
-    
+  alert(formData);
     
 
     $.ajax({
@@ -243,7 +243,7 @@ $('.butonAdd').click(function() {
         dataType: "JSON",
         success: function(data) {
             if (data.success == true) {
-                
+              
                 
                 location.reload();
             }
